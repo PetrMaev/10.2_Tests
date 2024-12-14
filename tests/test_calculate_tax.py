@@ -17,3 +17,8 @@ def test_calculate_tax_invalid_price():
 def test_calculate_tax_invalid_tax():
     with pytest.raises(ValueError):
         calculate_tax(100, -1)
+
+
+def test_calculate_tax_invalid_type():
+    with pytest.raises(TypeError):
+        calculate_tax("100", -1)
