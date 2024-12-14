@@ -15,5 +15,3 @@ def calculate_taxes(prices: list[float], tax_rate: float) -> list[float]:
     return taxed_prices
 
 print(calculate_taxes([100.00, 50], 20.0))
-
-print(calculate_taxes([0.0, 50], 20.0))
